@@ -66,7 +66,7 @@ echo -e " Status $sts"
 echo -e "  1. Install Webmin"
 echo -e "  2. Restart Webmin"
 echo -e "  3. Uninstall Webmin"
-echo -e " AutoScriptVPS By  Harithwyd"
+echo -e " AutoScriptVPS By  adamtech323"
 echo -e " Press CTRL+C to return"
 read -rp " Please Enter The Correct Number : " -e num
 if [[ "$num" = "1" ]]; then

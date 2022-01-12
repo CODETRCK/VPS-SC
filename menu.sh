@@ -105,19 +105,19 @@ echo -e  " $nc ║   [4]   -> ->         [Panel SSR & SS" | lolcat
 echo -e  " $nc ║   [5]   -> ->         [Panel VMESS" | lolcat
 echo -e  " $nc ║   [6]   -> ->         [Panel VLESS" | lolcat
 echo -e  " $nc ║   [7]   -> ->         [Panel Trojan" | lolcat
-echo -e  " $nc ║   [9]   -> ->         [Panel XRAY" | lolcat
+echo -e  " $nc ║   [8]   -> ->         [Panel XRAY" | lolcat
 echo -e  " $bl ║ "
 echo -e  "  ╠═════════════════════════════════════════════════════════════════╗" | lolcat
 echo -e  "  ║                           ┃ SYSTEM  ┃                           ║" | lolcat
 echo -e  "  ╠═════════════════════════════════════════════════════════════════╝" | lolcat
 echo -e  " $bl ║"
-echo -e  " $nc ║      [ 10 ] Add/Change Subdomain Host For VPS"
-echo -e  " $nc ║      [ 11 ] Add ID Cloudflare"
-echo -e  " $nc ║      [ 12 ] Cloudflare Add-Ons"
-echo -e  " $nc ║      [ 13 ] Pointing BUG"
-echo -e  " $nc ║      [ 14 ] Change Port Of Some Service"
-echo -e  " $nc ║      [ 15 ] Autobackup Data VPS"
-echo -e  " $nc ║      [ 16 ] Backup Data VPS"
+echo -e  " $nc ║      [ 9 ] Add/Change Subdomain Host For VPS"
+echo -e  " $nc ║      [ 10 ] Add ID Cloudflare"
+echo -e  " $nc ║      [ 11 ] Cloudflare Add-Ons"
+echo -e  " $nc ║      [ 12 ] Pointing BUG"
+echo -e  " $nc ║      [ 13 ] Change Port Of Some Service"
+echo -e  " $nc ║      [ 14 ] Autobackup Data VPS"
+echo -e  " $nc ║      [ 15 ] Backup Data VPS"
 echo -e  " $nc ║      [ 16 ] Restore Data VPS"
 echo -e  " $nc ║      [ 17 ] Webmin Menu"
 echo -e  " $nc ║      [ 18 ] Check Usage of VPS Ram"
@@ -154,46 +154,49 @@ echo -e   ""
    7)
    mtrojan
    ;;
-   8)
-   add-host
+	 8)
+   mxray
    ;;
    9)
-   cff
+   add-host
    ;;
    10)
-   cfd
+   cff
    ;;
    11)
-   cfh
+   cfd
    ;;
    12)
-   change
+   cfh
    ;;
    13)
-   autobackup
+   change
    ;;
    14)
-   backup
+   autobackup
    ;;
    15)
-   restore
+   backup
    ;;
    16)
-   wbmn
+   restore
    ;;
    17)
+   wbmn
+   ;;
+   18)
    ram
    ;;
-	 18)
+	 19)
    reboot
    ;;
-	 19)
+	 20)
    speedtest
    ;;
-	 20)
+	 21)
    info
    ;;
-	 21)
+	 22)
    about
    ;;
    0)
