@@ -3,13 +3,13 @@
 # ====================================
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/edussh-nontls https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/proxy-template.py
+wget -q -O /usr/local/bin/edussh-nontls https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/proxy-template.py
 chmod +x /usr/local/bin/edussh-nontls
 
 # Installing Service
 cat > /etc/systemd/system/edussh-nontls.service << END
 [Unit]
-Description=Ssh Websocket By Dragon0193
+DeCODETRCKion=Ssh Websocket By CODETRCK0193
 Documentation=https://google.com
 After=network.target nss-lookup.target
 
@@ -35,13 +35,13 @@ systemctl restart edussh-nontls
 # =================================
 
 # Getting Ovpn Ws Template
-wget -q -O /usr/local/bin/edu-ovpn https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/edu-op.py
+wget -q -O /usr/local/bin/edu-ovpn https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/edu-op.py
 chmod +x /usr/local/bin/edu-ovpn
 
 # Installing Service Ovpn Websocket
 cat > /etc/systemd/system/edu-ovpn.service << END
 [Unit]
-Description=Ovpn Websocket By Dragon0193
+DeCODETRCKion=Ovpn Websocket By CODETRCK0193
 Documentation=https://google.com
 After=network.target nss-lookup.target
 
@@ -69,4 +69,4 @@ echo -e "==============================="
 echo -e "PORT SSH WS NON TLS          : 2082"
 echo -e "PORT OVPN WS B               : 2095"
 echo -e "==============================="
-echo -e "Script By SCRIPT"
+echo -e "CODETRCK By CODETRCK"

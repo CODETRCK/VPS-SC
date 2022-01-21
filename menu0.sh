@@ -4,15 +4,6 @@ cd ..
 cd usr/bin
 clear
 clear
-echo -e "        ██▓ ███▄    █   █████▒▒█████         " |lolcat
-echo -e "       ▓██▒ ██ ▀█   █ ▓██   ▒▒██▒  ██▒       " |lolcat
-echo -e "       ▒██▒▓██  ▀█ ██▒▒████ ░▒██░  ██▒       " |lolcat
-echo -e "       ░██░▓██▒  ▐▌██▒░▓█▒  ░▒██   ██░       " |lolcat
-echo -e "       ░██░▒██░   ▓██░░▒█░   ░ ████▓▒░       " |lolcat
-echo -e "        ░▓  ░ ▒░   ▒ ▒  ▒ ░   ░ ▒░▒░▒░       " |lolcat
-echo -e "         ▒ ░░ ░░   ░ ▒░ ░       ░ ▒ ▒░       " |lolcat
-echo -e "         ▒ ░   ░   ░ ░  ░ ░   ░ ░ ░ ▒        " |lolcat
-echo -e "         ░           ░            ░ ░        " |lolcat
 echo -e "=============================-Menu-============================="
 echo -e "* menu         : List of Main Commands"
 echo -e ""
@@ -105,10 +96,10 @@ echo -e "* limit-speed  : Limit Bandwith Speed Server"
 echo -e "* ram          : Check Usage of VPS Ram"
 echo -e "* reboot       : Reboot VPS"
 echo -e "* speedtest    : Speedtest VPS"
-echo -e "* update       : Perbarui script"
+echo -e "* update       : Perbarui CODETRCK"
 echo -e "* info         : Displaying System Information"
-echo -e "* about        : Info Script Auto Install"
+echo -e "* about        : Info CODETRCK Auto Install"
 echo -e "* exit         : Exit From VPS "
-echo -e ""                SCRIPT BY SCRIPT
+echo -e ""                CODETRCK BY CODETRCK
 echo -e "==============================================================="
 echo -e ""

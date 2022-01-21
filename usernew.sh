@@ -3,9 +3,9 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
-echo "By SCRIPT"
+echo "By CODETRCK"
 clear
-source /var/lib/premium-script/ipvps.conf
+source /var/lib/premium-CODETRCK/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/v2ray/domain)
 else

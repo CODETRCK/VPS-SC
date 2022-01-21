@@ -40,4 +40,4 @@ clear
                done
                echo " "
                echo "--------------------------------------"
-               echo "Script are successfully run"
+               echo "CODETRCK are successfully run"

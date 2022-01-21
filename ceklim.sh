@@ -18,7 +18,7 @@ echo " No user has committed a violation"
 echo " "
 echo " or"
 echo " "
-echo " The user-limit script not been executed."
+echo " The user-limit CODETRCK not been executed."
 fi
 echo " ";
 echo "===========================================";

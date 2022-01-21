@@ -18,7 +18,7 @@ commonname=unknown
 email=mukhriza291@gmail.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -27,7 +27,7 @@ cd
 # Edit file /etc/systemd/system/rc-local.service
 cat > /etc/systemd/system/rc-local.service <<-END
 [Unit]
-Description=/etc/rc.local
+DeCODETRCKion=/etc/rc.local
 ConditionPathExists=/etc/rc.local
 [Service]
 Type=forking
@@ -44,7 +44,7 @@ END
 cat > /etc/rc.local <<-END
 #!/bin/sh -e
 # rc.local
-# By default this script does nothing.
+# By default this CODETRCK does nothing.
 exit 0
 END
 
@@ -85,14 +85,14 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/nginx.conf"
 mkdir -p /home/vps/public_html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/vps.conf"
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -122,7 +122,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
@@ -181,10 +181,10 @@ apt -y install tmux
 apt -y install ruby
 gem install lolcat
 apt -y install figlet
-wget -q https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/edu.sh && chmod +x edu.sh && ./edu.sh
+wget -q https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/edu.sh && chmod +x edu.sh && ./edu.sh
 
 #OpenVPN
-wget https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/vpn.sh && chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/vpn.sh && chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -199,17 +199,17 @@ fi
 clear
 echo; echo 'Installing DOS-Deflate 0.6'; echo
 echo; echo -n 'Downloading source files...'
-wget -q -O /usr/local/ddos/ddos.conf http://www.inetbase.com/scripts/ddos/ddos.conf
+wget -q -O /usr/local/ddos/ddos.conf http://www.inetbase.com/CODETRCKs/ddos/ddos.conf
 echo -n '.'
-wget -q -O /usr/local/ddos/LICENSE http://www.inetbase.com/scripts/ddos/LICENSE
+wget -q -O /usr/local/ddos/LICENSE http://www.inetbase.com/CODETRCKs/ddos/LICENSE
 echo -n '.'
-wget -q -O /usr/local/ddos/ignore.ip.list http://www.inetbase.com/scripts/ddos/ignore.ip.list
+wget -q -O /usr/local/ddos/ignore.ip.list http://www.inetbase.com/CODETRCKs/ddos/ignore.ip.list
 echo -n '.'
-wget -q -O /usr/local/ddos/ddos.sh http://www.inetbase.com/scripts/ddos/ddos.sh
+wget -q -O /usr/local/ddos/ddos.sh http://www.inetbase.com/CODETRCKs/ddos/ddos.sh
 chmod 0755 /usr/local/ddos/ddos.sh
 cp -s /usr/local/ddos/ddos.sh /usr/local/sbin/ddos
 echo '...done'
-echo; echo -n 'Creating cron to run script every minute.....(Default setting)'
+echo; echo -n 'Creating cron to run CODETRCK every minute.....(Default setting)'
 /usr/local/ddos/ddos.sh --cron > /dev/null 2>&1
 echo '.....done'
 echo; echo 'Installation has completed.'
@@ -217,7 +217,7 @@ echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/issue.net"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/issue.net"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
@@ -238,43 +238,43 @@ iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
 netfilter-persistent reload
 
-# download script
+# download CODETRCK
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/menu.sh"
-wget -O add-host "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/add-host.sh"
-wget -O about "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/about.sh"
-wget -O usernew "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/member.sh"
-wget -O delete "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/restart.sh"
-wget -O speedtest "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/info.sh"
-wget -O ram "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/ram.sh"
-wget -O renew "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/renew.sh"
-wget -O autokill "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/tendang.sh"
-wget -O clear-log "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/clear-log.sh"
-wget -O change "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/change.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-ovpn.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-ssl.sh"
-wget -O port-wg "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-wg.sh"
-wget -O port-tr "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-tr.sh"
-wget -O port-sstp "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-sstp.sh"
-wget -O port-squid "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-squid.sh"
-wget -O port-ws "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-ws.sh"
-wget -O port-vless "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-vless.sh"
-wget -O update "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/update-1.2.sh"
-wget -O wbmn "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/webmin.sh"
-wget -O xp "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/xp.sh"
-wget -O bbr "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/bbr.sh"
-wget -O cfd "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/cfd.sh"
-wget -O cff "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/cff.sh"
-wget -O cfh "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/cfh.sh"
-wget -O kernel-updt "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/kernel-update.sh"
+wget -O menu "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/menu.sh"
+wget -O add-host "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/add-host.sh"
+wget -O about "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/about.sh"
+wget -O usernew "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/member.sh"
+wget -O delete "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/delete.sh"
+wget -O cek "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/cek.sh"
+wget -O restart "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/restart.sh"
+wget -O speedtest "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/info.sh"
+wget -O ram "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/ram.sh"
+wget -O renew "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/renew.sh"
+wget -O autokill "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/autokill.sh"
+wget -O ceklim "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/tendang.sh"
+wget -O clear-log "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/clear-log.sh"
+wget -O change "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/change.sh"
+wget -O port-ovpn "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-ovpn.sh"
+wget -O port-ssl "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-ssl.sh"
+wget -O port-wg "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-wg.sh"
+wget -O port-tr "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-tr.sh"
+wget -O port-sstp "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-sstp.sh"
+wget -O port-squid "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-squid.sh"
+wget -O port-ws "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-ws.sh"
+wget -O port-vless "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-vless.sh"
+wget -O update "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/update-1.2.sh"
+wget -O wbmn "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/webmin.sh"
+wget -O xp "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/xp.sh"
+wget -O bbr "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/bbr.sh"
+wget -O cfd "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/cfd.sh"
+wget -O cff "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/cff.sh"
+wget -O cfh "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/cfh.sh"
+wget -O kernel-updt "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/kernel-update.sh"
 chmod +x menu
 chmod +x add-host
 chmod +x usernew

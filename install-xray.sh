@@ -1,6 +1,6 @@
 #!/bin/bash
 # XRay Installation
-# Coded By SCRIPTvpn
+# Coded By CODETRCKvpn
 apt update -y
 apt upgrade -y
 apt install socat -y
@@ -12,11 +12,11 @@ apt install nano -y
 apt install python3 -y
 
 # // Make Main Directory
-mkdir -p /usr/local/SCRIPT/
+mkdir -p /usr/local/CODETRCK/
 
 # // Installation XRay Core
-wget -q -O /usr/local/SCRIPT/xray-mini "https://raw.githubusercontent.com/SCRIPT-X/SCRIPT/main/xray-mini"
-chmod +x /usr/local/SCRIPT/xray-mini
+wget -q -O /usr/local/CODETRCK/xray-mini "https://raw.githubusercontent.com/CODETRCK-X/CODETRCK/main/xray-mini"
+chmod +x /usr/local/CODETRCK/xray-mini
 
 # // Make XRay Mini Root Folder
 mkdir -p /etc/xray-mini/
@@ -25,14 +25,14 @@ chmod 775 /etc/xray-mini/
 # // Installing XRay Mini Service
 cat > /etc/systemd/system/xray-mini@.service << EOF
 [Unit]
-Description=XRay-Mini Service ( %i )
+DeCODETRCKion=XRay-Mini Service ( %i )
 Documentation=https://wildyproject.com https://github.com/XTLS/Xray-core
 After=network.target nss-lookup.target
 
 [Service]
 User=root
 NoNewPrivileges=true
-ExecStart=/usr/local/SCRIPT/xray-mini -config /etc/xray-mini/%i.json
+ExecStart=/usr/local/CODETRCK/xray-mini -config /etc/xray-mini/%i.json
 Restart=on-failure
 RestartPreventExitStatus=23
 LimitNPROC=10000
@@ -174,9 +174,9 @@ systemctl enable xray-mini@vless-splice
 systemctl start xray-mini@vless-splice
 
 # // Downloading Menu
-wget -q -O /usr/bin/add-xray "https://raw.githubusercontent.com/SCRIPT-X/SCRIPT/main/add-xray.sh"
-wget -q -O /usr/bin/del-xray "https://raw.githubusercontent.com/SCRIPT-X/SCRIPT/main/del-xray.sh"
-wget -q -O /usr/bin/renew-xray "https://raw.githubusercontent.com/SCRIPT-X/SCRIPT/main/renew-xray.sh"
+wget -q -O /usr/bin/add-xray "https://raw.githubusercontent.com/CODETRCK-X/CODETRCK/main/add-xray.sh"
+wget -q -O /usr/bin/del-xray "https://raw.githubusercontent.com/CODETRCK-X/CODETRCK/main/del-xray.sh"
+wget -q -O /usr/bin/renew-xray "https://raw.githubusercontent.com/CODETRCK-X/CODETRCK/main/renew-xray.sh"
 chmod +x /usr/bin/add-xray
 chmod +x /usr/bin/del-xray
 chmod +x /usr/bin/renew-xray

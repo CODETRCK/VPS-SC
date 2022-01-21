@@ -22,7 +22,7 @@ if [[ -e /etc/wireguard/params ]]; then
 	exit 1
 fi
 
-echo -e "${Info} Wireguard VPS AutoScript by SCRIPT"
+echo -e "${Info} Wireguard VPS AutoCODETRCK by CODETRCK"
 # Detect public IPv4 address and pre-fill for the user
 
 # Detect public interface and pre-fill for the user
@@ -88,11 +88,11 @@ WG_RUNNING=$?
 
 # Tambahan
 cd /usr/bin
-wget -O mwg "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/mwg.sh"
-wget -O add-wg "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/add-wg.sh"
-wget -O del-wg "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/del-wg.sh"
-wget -O cek-wg "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/cek-wg.sh"
-wget -O renew-wg "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/renew-wg.sh"
+wget -O mwg "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/mwg.sh"
+wget -O add-wg "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/add-wg.sh"
+wget -O del-wg "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/del-wg.sh"
+wget -O cek-wg "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/cek-wg.sh"
+wget -O renew-wg "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/renew-wg.sh"
 chmod +x mwg
 chmod +x add-wg
 chmod +x del-wg

@@ -2,7 +2,7 @@
 
 clear
 if [ "${EUID}" -ne 0 ]; then
-		echo "You need to run this script as root"
+		echo "You need to run this CODETRCK as root"
 		exit 1
 fi
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
@@ -10,18 +10,9 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		exit 1
 fi
 clear
-echo -e "        ██▓ ███▄    █   █████▒▒█████         " |lolcat
-echo -e "       ▓██▒ ██ ▀█   █ ▓██   ▒▒██▒  ██▒       " |lolcat
-echo -e "       ▒██▒▓██  ▀█ ██▒▒████ ░▒██░  ██▒       " |lolcat
-echo -e "       ░██░▓██▒  ▐▌██▒░▓█▒  ░▒██   ██░       " |lolcat
-echo -e "       ░██░▒██░   ▓██░░▒█░   ░ ████▓▒░       " |lolcat
-echo -e "        ░▓  ░ ▒░   ▒ ▒  ▒ ░   ░ ▒░▒░▒░       " |lolcat
-echo -e "         ▒ ░░ ░░   ░ ▒░ ░       ░ ▒ ▒░       " |lolcat
-echo -e "         ▒ ░   ░   ░ ░  ░ ░   ░ ░ ░ ▒        " |lolcat
-echo -e "         ░           ░            ░ ░        " |lolcat
 echo -e ""
 echo -e " ╔══════════════════════════════════════════════╗" | lolcat
-echo -e " ║                   WIREGUARD                  ║" | lolcat
+echo -e " ║                 MENU  WIREGUARD              ║" | lolcat
 echo -e " ╠══════════════════════════════════════════════╝" | lolcat
 echo -e " ║" | lolcat
 echo -e " ║  [ 1 ] Create Wireguard Account"

@@ -2,7 +2,7 @@
 
 clear
 if [ "${EUID}" -ne 0 ]; then
-		echo "You need to run this script as root"
+		echo "You need to run this CODETRCK as root"
 		exit 1
 fi
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
@@ -10,19 +10,9 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		exit 1
 fi
 clear
-echo -e "        ██▓ ███▄    █   █████▒▒█████         " |lolcat
-echo -e "       ▓██▒ ██ ▀█   █ ▓██   ▒▒██▒  ██▒       " |lolcat
-echo -e "       ▒██▒▓██  ▀█ ██▒▒████ ░▒██░  ██▒       " |lolcat
-echo -e "       ░██░▓██▒  ▐▌██▒░▓█▒  ░▒██   ██░       " |lolcat
-echo -e "       ░██░▒██░   ▓██░░▒█░   ░ ████▓▒░       " |lolcat
-echo -e "        ░▓  ░ ▒░   ▒ ▒  ▒ ░   ░ ▒░▒░▒░       " |lolcat
-echo -e "         ▒ ░░ ░░   ░ ▒░ ░       ░ ▒ ▒░       " |lolcat
-echo -e "         ▒ ░   ░   ░ ░  ░ ░   ░ ░ ░ ▒        " |lolcat
-echo -e "         ░           ░            ░ ░        " |lolcat
 echo -e ""
-echo ""
 echo -e " ╔═════════════════════════════════════════════╗" | lolcat
-echo -e " ║                    VLESS                    ║"   | lolcat
+echo -e " ║                  MENU  VLESS                ║"   | lolcat
 echo -e " ╠═════════════════════════════════════════════╝" | lolcat
 echo -e " ║" | lolcat
 echo -e " ║  [ 1 ] Create Vless Account"

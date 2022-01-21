@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script by : SCRIPT
+# CODETRCK by : CODETRCK
 #!/bin/bash
 clear
 MAX=1

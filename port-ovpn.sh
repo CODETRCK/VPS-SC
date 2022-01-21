@@ -30,7 +30,7 @@ rm -f /etc/openvpn/server/server-tcp-$ovpn.conf
 rm -f /etc/openvpn/client-tcp-$ovpn.ovpn
 rm -f /home/vps/public_html/client-tcp-$ovpn.ovpn
 cat > /etc/openvpn/server/server-tcp-$vpn.conf<<END
-=================PREMIUM SCRIPT BY INFO_ANDROID===================
+=================PREMIUM CODETRCK BY CODETRCK===================
 port $vpn
 proto tcp
 dev tun
@@ -54,7 +54,7 @@ status openvpn-tcp.log
 verb 3
 END
 cat > /etc/openvpn/client-tcp-$vpn.ovpn <<-END
-=================PREMIUM SCRIPT BY INFO_ANDROID===================
+=================PREMIUM CODETRCK BY CODETRCK===================
 client
 dev tun
 proto tcp
@@ -93,7 +93,7 @@ rm -f /etc/openvpn/server/server-udp-$ovpn2.conf
 rm -f /etc/openvpn/client-udp-$ovpn2.ovpn
 rm -f /home/vps/public_html/client-tcp-$ovpn2.ovpn
 cat > /etc/openvpn/server/server-udp-$vpn.conf<<END
-=================PREMIUM SCRIPT BY INFO_ANDROID===================
+=================PREMIUM CODETRCK BY CODETRCK===================
 port $vpn
 proto udp
 dev tun
@@ -118,7 +118,7 @@ verb 3
 explicit-exit-notify
 END
 cat > /etc/openvpn/client-udp-$vpn.ovpn <<-END
-=================PREMIUM SCRIPT BY INFO_ANDROID===================
+=================PREMIUM CODETRCK BY CODETRCK===================
 client
 dev tun
 proto udp

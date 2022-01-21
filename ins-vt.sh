@@ -16,7 +16,7 @@ date
 mkdir -p /etc/trojan/
 touch /etc/trojan/akun.conf
 # install v2ray
-wget https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/go.sh && chmod +x go.sh && ./go.sh
+wget https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/go.sh && chmod +x go.sh && ./go.sh
 rm -f /root/go.sh
 bash -c "$(wget -O- https://raw.githubusercontent.com/trojan-gfw/trojan-quickstart/master/trojan-quickstart.sh)"
 mkdir /root/.acme.sh
@@ -446,7 +446,7 @@ cat <<EOF > /etc/trojan/config.json
 EOF
 cat <<EOF> /etc/systemd/system/trojan.service
 [Unit]
-Description=Trojan
+DeCODETRCKion=Trojan
 Documentation=https://trojan-gfw.github.io/trojan/
 
 [Service]
@@ -493,23 +493,23 @@ systemctl enable v2ray
 
 cd /usr/bin
 
-wget -O mssh "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/mssh.sh"
-wget -O mtrojan "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/mtrojan.sh"
-wget -O mvless "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/mvless.sh"
-wget -O mvmess "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/mvmess.sh"
-wget -O add-ws "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/add-ws.sh"
-wget -O add-vless "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/add-vless.sh"
-wget -O add-tr "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/add-tr.sh"
-wget -O del-ws "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/del-ws.sh"
-wget -O del-vless "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/del-vless.sh"
-wget -O del-tr "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/del-tr.sh"
-wget -O cek-ws "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/cek-ws.sh"
-wget -O cek-vless "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/cek-vless.sh"
-wget -O cek-tr "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/cek-tr.sh"
-wget -O renew-ws "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/renew-ws.sh"
-wget -O renew-vless "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/renew-vless.sh"
-wget -O renew-tr "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/renew-tr.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/cert.sh"
+wget -O mssh "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/mssh.sh"
+wget -O mtrojan "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/mtrojan.sh"
+wget -O mvless "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/mvless.sh"
+wget -O mvmess "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/mvmess.sh"
+wget -O add-ws "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/add-ws.sh"
+wget -O add-vless "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/add-vless.sh"
+wget -O add-tr "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/add-tr.sh"
+wget -O del-ws "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/del-ws.sh"
+wget -O del-vless "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/del-vless.sh"
+wget -O del-tr "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/del-tr.sh"
+wget -O cek-ws "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/cek-ws.sh"
+wget -O cek-vless "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/cek-vless.sh"
+wget -O cek-tr "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/cek-tr.sh"
+wget -O renew-ws "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/renew-ws.sh"
+wget -O renew-vless "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/renew-vless.sh"
+wget -O renew-tr "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/renew-tr.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/cert.sh"
 chmod +x mssh
 chmod +x mtrojan
 chmod +x mvless

@@ -321,11 +321,11 @@ installV2Ray(){
 }
 
 
-installInitScript(){
+installInitCODETRCK(){
     if [[ ! -f "/etc/systemd/system/v2ray.service" && ! -f "/lib/systemd/system/v2ray.service" ]]; then
         cat > /etc/systemd/system/v2ray.service <<EOF
 [Unit]
-Description=V2Ray Service
+DeCODETRCKion=V2Ray Service
 Documentation=https://www.v2ray.com/ https://www.v2fly.org/
 After=network.target nss-lookup.target
 
@@ -343,7 +343,7 @@ WantedBy=multi-user.target
 EOF
 cat > /etc/systemd/system/v2ray@.service <<-EOF
 [Unit]
-Description=V2Ray Service
+DeCODETRCKion=V2Ray Service
 After=network.target nss-lookup.target
  
 [Service]
@@ -503,7 +503,7 @@ main(){
         stopV2ray
     fi
     installV2Ray "${ZIPFILE}" "${ZIPROOT}" || return $?
-    installInitScript "${ZIPFILE}" "${ZIPROOT}" || return $?
+    installInitCODETRCK "${ZIPFILE}" "${ZIPROOT}" || return $?
     if [[ ${V2RAY_RUNNING} -eq 1 ]];then
         colorEcho ${BLUE} "Restarting V2Ray service."
         startV2ray

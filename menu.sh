@@ -2,7 +2,7 @@
 
 clear
 if [ "${EUID}" -ne 0 ]; then
-		echo "You need to run this script as root"
+		echo "You need to run this CODETRCK as root"
 		exit 1
 fi
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
@@ -81,11 +81,11 @@ freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
  	echo -e "   $green Day                  :$NC  $DAY"
  	echo -e "   $green Date                 :$NC  $DATE"
  	echo -e "   $green Telegram             :$NC  $tele"
- 	echo -e "   $green Script Version       :$NC  $Sver"
+ 	echo -e "   $green CODETRCK Version       :$NC  $Sver"
 
 
 
-
+echo -e  "+============================PREMIUM SCRIPT==========================+"
 echo -e  "  ╔═════════════════════════════════════════════════════════════════╗" | lolcat
 echo -e  "  ║                          ┃ MAIN MENU ┃                          ║" |lolcat
 echo -e  "  ╠═════════════════════════════════════════════════════════════════╝" | lolcat
@@ -115,7 +115,7 @@ echo -e  " $nc ║      [ 18 ] Check Usage of VPS Ram"
 echo -e  " $nc ║      [ 19 ] Reboot VPS"
 echo -e  " $nc ║      [ 20 ] Speedtest VPS"
 echo -e  " $nc ║      [ 21 ] Displaying System Information"
-echo -e  " $nc ║      [ 22 ] Info Script"
+echo -e  " $nc ║      [ 22 ] Info CODETRCK"
 echo -e  " $bl ║"
 echo -e  "  ╠═════════════════════════════════════════════════════════════════╗\e[m" | lolcat
 echo -e  "  ║ [0] Exit Menu                                                   ║\e[m" | lolcat

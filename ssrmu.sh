@@ -601,7 +601,7 @@ Clear_transfer_all_cron_modify(){
 }
 Set_crontab(){
 		echo -e "Please enter an interval to clear the flow
- === Format Description ===
+ === Format DeCODETRCKion ===
  * * * * * In accordance with the minutes, hours, days, months, weeks
  ${Green_font_prefix} 0 2 1 * * ${Font_color_suffix} On behalf of every month at 2 o'clock on the 1st, clean used traffic
  ${Green_font_prefix} 0 2 15 * * ${Font_color_suffix} On the 15th of each month at 2: 0 pm Remove used traffic
@@ -649,7 +649,7 @@ Update_Shell(){
 			if [[ $sh_new_type == "github" ]]; then
 				wget -N --no-check-certificate https://raw.githubusercontent.com/hybtoy/ssrrmu/master/ssrrmu.sh && chmod +x ssrrmu.sh
 			fi
-			echo -e "The Script Has Been Updated To The Latest Version..."
+			echo -e "The CODETRCK Has Been Updated To The Latest Version..."
 		else
 			echo && echo "cancel..." && echo
 		fi
@@ -689,9 +689,9 @@ menu_status
   ${Green_font_prefix}7.${Font_color_suffix}  Stop ShadowsocksR
   ${Green_font_prefix}8.${Font_color_suffix}  Restart ShadowsocksR
   ${Green_font_prefix}9.${Font_color_suffix}  Cek ShadowsocksR log
-  ${Green_font_prefix}10.${Font_color_suffix} Upgrade script 
+  ${Green_font_prefix}10.${Font_color_suffix} Upgrade CODETRCK 
   
-  ${Tip} Username And User Port Can Not Be Changed, If You Need To Modify, Use The Script To Manually Change The Function!
+  ${Tip} Username And User Port Can Not Be Changed, If You Need To Modify, Use The CODETRCK To Manually Change The Function!
  "
 	echo && read -e -p "Please enter the correct number [1-10]：" num
 case "$num" in

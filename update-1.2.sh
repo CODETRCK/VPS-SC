@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ "${EUID}" -ne 0 ]; then
-		echo "You need to run this script as root"
+		echo "You need to run this CODETRCK as root"
 		exit 1
 fi
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
@@ -17,27 +17,27 @@ echo "You Have The Latest Version"
 fi
 echo "Start Update"
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/trial.sh"
-wget -O change "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/change.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-ovpn.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-ssl.sh"
-wget -O port-wg "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-wg.sh"
-wget -O port-xray "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-xray.sh
-wget -O port-tr "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-tr.sh"
-wget -O port-sstp "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-sstp.sh"
-wget -O port-squid "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-squid.sh"
-wget -O port-ws "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-ws.sh"
-wget -O port-vless "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/port-vless.sh"
-wget -O wbmn "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/webmin.sh"
-wget -O xp "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/xp.sh"
-wget -O limit-speed "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/limit-speed.sh"
-wget -O add-sstp "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/add-sstp.sh"
-wget -O add-xray "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/add-xray.sh"
-wget -O add-ws "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/add-ws.sh"
-wget -O add-vless "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/add-vless.sh"
-wget -O add-tr "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/add-tr.sh"
+wget -O menu "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/trial.sh"
+wget -O change "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/change.sh"
+wget -O port-ovpn "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-ovpn.sh"
+wget -O port-ssl "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-ssl.sh"
+wget -O port-wg "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-wg.sh"
+wget -O port-xray "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-xray.sh
+wget -O port-tr "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-tr.sh"
+wget -O port-sstp "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-sstp.sh"
+wget -O port-squid "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-squid.sh"
+wget -O port-ws "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-ws.sh"
+wget -O port-vless "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/port-vless.sh"
+wget -O wbmn "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/webmin.sh"
+wget -O xp "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/xp.sh"
+wget -O limit-speed "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/limit-speed.sh"
+wget -O add-sstp "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/add-sstp.sh"
+wget -O add-xray "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/add-xray.sh"
+wget -O add-ws "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/add-ws.sh"
+wget -O add-vless "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/add-vless.sh"
+wget -O add-tr "https://raw.githubusercontent.com/CODETRCK/CODETRCK/main/add-tr.sh"
 chmod +x change
 chmod +x port-ovpn
 chmod +x port-ssl
