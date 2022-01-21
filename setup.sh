@@ -21,22 +21,22 @@ echo "IP=$host" >> /var/lib/premium-script/ipvps..conf
 echo  "$host" >> /root/domain
 echo  "$host" >> /etc/v2ray/domain
 echo "V1.0" >> /home/version
-echo "@Adamvpn" >> /home/contact
+echo "@SCRIPTvpn" >> /home/contact
 clear
-wget https://raw.githubusercontent.com/adamtech323/VPS-SC/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/adamtech323/VPS-SC/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/adamtech323/VPS-SC/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://raw.githubusercontent.com/adamtech323/VPS-SC/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://raw.githubusercontent.com/adamtech323/VPS-SC/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
-wget https://raw.githubusercontent.com/adamtech323/VPS-SC/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install v2ray
-wget http://raw.githubusercontent.com/adamtech323/VPS-SC/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget http://raw.githubusercontent.com/SCRIPT/SCRIPT/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install L2TP
-wget https://raw.githubusercontent.com/adamtech323/VPS-SC/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-wget https://raw.githubusercontent.com/adamtech323/VPS-SC/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
@@ -61,7 +61,7 @@ WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
 systemctl enable autosett
-wget -O /etc/set.sh "https://raw.githubusercontent.com/adamtech323/VPS-SC/main/set.sh"
+wget -O /etc/set.sh "https://raw.githubusercontent.com/SCRIPT/SCRIPT/main/set.sh"
 chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
@@ -109,15 +109,15 @@ echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   - Dev/Main                : DAM"  | tee -a log-install.txt
-echo "   - Modded by               : ADAMVPN"  | tee -a log-install.txt
-echo "   - Telegram                : t.me/ADAMVPN"  | tee -a log-install.txt
+echo "   - Dev/Main                : sc"  | tee -a log-install.txt
+echo "   - Modded by               : rahsia"  | tee -a log-install.txt
+echo "   - Telegram                : Rahsia sayang"  | tee -a log-install.txt
 echo "   - Instagram               : Rahsia sayang"  | tee -a log-install.txt
-echo "   - Whatsapp                : 0184677179"   | tee -a log-install.txt
+echo "   - Whatsapp                : rahsia"   | tee -a log-install.txt
 echo "   - Facebook                : Rahsia sayang" | tee -a log-install.txt
-echo "------------------Script Created By adam-----------------" | tee -a log-install.txt
+echo "------------------Script Created By SCRIPT-----------------" | tee -a log-install.txt
 echo ""
-echo " Reboot 20 Sec"
+echo " Reboot 10 Sec"
 sleep 15
 rm -f setup.sh
 reboot

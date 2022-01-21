@@ -1,6 +1,6 @@
 #!/bin/bash
 # XRay Installation
-# Coded By adamvpn
+# Coded By SCRIPTvpn
 apt update -y
 apt upgrade -y
 apt install socat -y
@@ -12,11 +12,11 @@ apt install nano -y
 apt install python3 -y
 
 # // Make Main Directory
-mkdir -p /usr/local/adamtech323/
+mkdir -p /usr/local/SCRIPT/
 
 # // Installation XRay Core
-wget -q -O /usr/local/adamtech323/xray-mini "https://raw.githubusercontent.com/adamtech323-X/VPS-SC/main/xray-mini"
-chmod +x /usr/local/adamtech323/xray-mini
+wget -q -O /usr/local/SCRIPT/xray-mini "https://raw.githubusercontent.com/SCRIPT-X/SCRIPT/main/xray-mini"
+chmod +x /usr/local/SCRIPT/xray-mini
 
 # // Make XRay Mini Root Folder
 mkdir -p /etc/xray-mini/
@@ -32,7 +32,7 @@ After=network.target nss-lookup.target
 [Service]
 User=root
 NoNewPrivileges=true
-ExecStart=/usr/local/adamtech323/xray-mini -config /etc/xray-mini/%i.json
+ExecStart=/usr/local/SCRIPT/xray-mini -config /etc/xray-mini/%i.json
 Restart=on-failure
 RestartPreventExitStatus=23
 LimitNPROC=10000
@@ -174,9 +174,9 @@ systemctl enable xray-mini@vless-splice
 systemctl start xray-mini@vless-splice
 
 # // Downloading Menu
-wget -q -O /usr/bin/add-xray "https://raw.githubusercontent.com/adamtech323-X/VPS-SC/main/add-xray.sh"
-wget -q -O /usr/bin/del-xray "https://raw.githubusercontent.com/adamtech323-X/VPS-SC/main/del-xray.sh"
-wget -q -O /usr/bin/renew-xray "https://raw.githubusercontent.com/adamtech323-X/VPS-SC/main/renew-xray.sh"
+wget -q -O /usr/bin/add-xray "https://raw.githubusercontent.com/SCRIPT-X/SCRIPT/main/add-xray.sh"
+wget -q -O /usr/bin/del-xray "https://raw.githubusercontent.com/SCRIPT-X/SCRIPT/main/del-xray.sh"
+wget -q -O /usr/bin/renew-xray "https://raw.githubusercontent.com/SCRIPT-X/SCRIPT/main/renew-xray.sh"
 chmod +x /usr/bin/add-xray
 chmod +x /usr/bin/del-xray
 chmod +x /usr/bin/renew-xray
